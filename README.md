@@ -1,1 +1,1 @@
-# au-dynamic-component
+# au-dynamic-componentg
