@@ -57,8 +57,8 @@ export class TestComponentOneComponent implements OnInit {
 
 ## step 3
 
-connect this component to your module, 
-be sure to specify the component in entryComponents
+connect this component to the module, 
+specify the component in entryComponents if it is already connected to your module or install it isRegistered: false
 > entryComponents: [TestComponentOneComponent]
 ```
 @NgModule({
@@ -114,17 +114,19 @@ The component accepts parameters:
 
 ```
 {
-        *an instance of a dynamically created component : ComponentRef<any>*
+        // an instance of a dynamically created component : ComponentRef<any>
         component: TestComponentOneComponent,
         params?: {
-            *incoming parameters for a component. any: @Input()*
+            // incoming parameters for a component. any: @Input()
             inputs: {
                 inputParam: 'I am good component'
             },
-            *output parameters for component. any: @Output()*
+            // output parameters for component. any: @Output()
             outputs: {
                 outputParam: () => console.log('app-test-component-one - component')
             }
-        }
+        },
+        // whether a component is added to the module, by default true: Boolean
+        isRegistered?: true
     }
 ```

@@ -5,7 +5,7 @@ import {NgxComponentOutletModule} from 'ngx-component-outlet';
 export interface AuDinamycComponentInterface {
     component: ComponentRef<any>;
     params?: { inputs?: object, outputs?: object };
-    isNotRegistered?: boolean;
+    isRegistered?: boolean;
 }
 
 /**
@@ -34,7 +34,7 @@ export class AuCreateService {
      *                  old: Number,
      *                  onUpdate: () => {console.log('I am updated!');}
      *              }
-     * @param {boolean} isNotRegistered, Whether the component is registered in any module
+     * @param {boolean} isRegistered, Whether the component is registered in any module
      * @returns {{component: ComponentRef<any>, instance dinamyc create component; module: NgModuleFactory<any>}}
      */
     create(options: AuDinamycComponentInterface) {
@@ -47,7 +47,7 @@ export class AuCreateService {
 
         this._prefix++;
 
-        if (options.isNotRegistered) {
+        if (options.isRegistered === false) {
             includedСomponents.push(options.component);
         }
 
