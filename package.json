@@ -1,6 +1,16 @@
 {
   "name": "au-dynamic-component",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "description": "Сomponent will help you create components on the fly"",
+  "author": "AUbaev aleksei.ubaev@gmail.com",
+  "homepage": "https://github.com/AlekseiUbaev/au-dynamic-component",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlekseiUbaev/au-dynamic-component.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AlekseiUbaev/au-dynamic-component/issues"
+  },
   "license": "MIT",
   "scripts": {
     "ng": "ng",
