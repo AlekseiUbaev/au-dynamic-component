@@ -1,0 +1,28 @@
+{
+  "name": "@angular/aung-dinamic-component",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlekseiUbaev/au-dynamic-component"
+  },
+  "author": {
+    "name": "Aleksei Ubaev",
+    "email": "aleksei.ubaev@gmail.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlekseiUbaev/au-dynamic-component/issues"
+  },
+  "main": "aung-dinamic-component.umd.js",
+  "module": "aung-dinamic-component.js",
+  "jsnext:main": "aung-dinamic-component.js",
+  "typings": "aung-dinamic-component.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}
